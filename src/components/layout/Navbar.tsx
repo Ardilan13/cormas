@@ -22,7 +22,7 @@ export default function Navbar() {
         </Link>
 
         {/* Links desktop */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex md:text-3xl space-x-6">
           <NavLink to="/portafolio" className={navLinkClass}>
             Portafolio
           </NavLink>
@@ -34,7 +34,7 @@ export default function Navbar() {
         {/* Botón móvil */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-gray-600 focus:outline-none"
+          className="md:hidden text-secondary-700 focus:outline-none"
         >
           <svg
             className="w-6 h-6"
