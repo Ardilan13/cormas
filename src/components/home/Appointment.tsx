@@ -14,10 +14,10 @@ export default function Appointment() {
   };
 
   return (
-    <section className="py-20 bg-blue-600 text-white">
+    <section className="py-20 bg-secondary-700 text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">Reserva una Cita</h2>
-        <p className="mb-8 text-blue-100">
+        <p className="mb-8 text-secondary-500">
           Agenda una consulta con nuestro equipo para conocer cómo podemos
           ayudarte.
         </p>
@@ -32,7 +32,7 @@ export default function Appointment() {
             value={form.name}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
           />
           <input
             type="email"
@@ -41,7 +41,7 @@ export default function Appointment() {
             value={form.email}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
           />
           <input
             type="date"
@@ -49,11 +49,11 @@ export default function Appointment() {
             value={form.date}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
           />
           <button
             type="submit"
-            className="md:col-span-3 bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+            className="md:col-span-3 bg-primary-500 text-white py-3 rounded-lg font-medium hover:bg-primary-700 transition"
           >
             Reservar Cita
           </button>
