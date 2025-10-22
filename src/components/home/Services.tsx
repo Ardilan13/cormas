@@ -1,4 +1,4 @@
-import { servicesData } from "../../data/ServicesData";
+import { servicesData } from "../../data/servicesData";
 
 interface ServicesProps {
   showCount?: number;

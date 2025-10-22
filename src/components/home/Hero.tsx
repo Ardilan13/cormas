@@ -12,6 +12,19 @@ export default function Hero() {
           industrial en todo el país.
         </p>
       </div>
+
+      {/* Enlace de descarga del certificado con imagen */}
+      <a
+        href="/certificado.pdf"
+        download="Certificado-ISO-CORMAS"
+        className="absolute bottom-6 left-6 z-10 transition hover:scale-105"
+      >
+        <img
+          src="/iso_9001.png"
+          alt="Certificado ISO 9001"
+          className="w-32 h-16 md:w-40 md:h-20"
+        />
+      </a>
     </section>
   );
 }
