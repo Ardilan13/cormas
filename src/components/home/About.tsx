@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <img
-            src="/images/about.jpg"
+            src="/cormas_logo.png"
             alt="Quiénes somos"
             className="rounded-2xl shadow-md object-cover w-full"
           />
