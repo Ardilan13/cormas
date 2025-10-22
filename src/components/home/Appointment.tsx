@@ -3,14 +3,16 @@ import { useState } from "react";
 export default function Appointment() {
   const [form, setForm] = useState({ name: "", email: "", date: "" });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm({ ...form, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Cita reservada correctamente ✅");
-    setForm({ name: "", email: "", date: "" });
+    const subject = encodeURIComponent("Nueva reserva de cita");
+    const body = encodeURIComponent(
+      `Nombre: ${form.name}\nCorreo: ${form.email}\nFecha de la cita: ${form.date}`
+    );
+    window.location.href = `mailto:gerencia@cormassas.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -32,7 +34,7 @@ export default function Appointment() {
             value={form.name}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
+            className="border border-gray-300 rounded-lg px-4 py-2"
           />
           <input
             type="email"
@@ -41,7 +43,7 @@ export default function Appointment() {
             value={form.email}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
+            className="border border-gray-300 rounded-lg px-4 py-2"
           />
           <input
             type="date"
@@ -49,7 +51,7 @@ export default function Appointment() {
             value={form.date}
             onChange={handleChange}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
+            className="border border-gray-300 rounded-lg px-4 py-2"
           />
           <button
             type="submit"

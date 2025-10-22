@@ -5,14 +5,15 @@ export default function Contact() {
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  ) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Mensaje enviado ✅");
-    setForm({ name: "", email: "", message: "" });
+    const subject = encodeURIComponent("Nuevo mensaje desde la web");
+    const body = encodeURIComponent(
+      `Nombre: ${form.name}\nCorreo: ${form.email}\nMensaje:\n${form.message}`
+    );
+    window.location.href = `mailto:gerencia@cormassas.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -25,47 +26,33 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="bg-white shadow-md rounded-xl p-8 space-y-6"
         >
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Nombre
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Correo electrónico
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Mensaje
-            </label>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              rows={5}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
-              required
-            ></textarea>
-          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            value={form.name}
+            onChange={handleChange}
+            required
+            className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            value={form.email}
+            onChange={handleChange}
+            required
+            className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          />
+          <textarea
+            name="message"
+            placeholder="Mensaje"
+            value={form.message}
+            onChange={handleChange}
+            rows={5}
+            required
+            className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          ></textarea>
 
           <button
             type="submit"
