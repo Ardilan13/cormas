@@ -9,11 +9,15 @@ export default function Footer() {
         <div className="flex space-x-4 mt-3 md:mt-0">
           <div>
             <h3>Ubicación</h3>
-            <p></p>
+            <ul>
+              <li></li>
+            </ul>
           </div>
           <div>
             <h3>Contacto</h3>
-            <p></p>
+            <ul>
+              <li></li>
+            </ul>
           </div>
         </div>
       </div>
