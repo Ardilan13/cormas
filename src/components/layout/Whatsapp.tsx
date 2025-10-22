@@ -1,8 +1,8 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "573503461730"; // tu número en formato internacional (sin +, solo dígitos)
-  const message = "¡Hola! Me gustaría obtener más información.";
+  const phoneNumber = "573204292908";
+  const message = "¡Hola! Me gustaría obtener más información de CORMAS.";
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 

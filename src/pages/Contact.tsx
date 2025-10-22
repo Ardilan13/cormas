@@ -23,7 +23,7 @@ export default function Contact() {
         </h2>
         <form
           onSubmit={handleSubmit}
-          className="shadow-md rounded-xl p-8 space-y-6"
+          className="bg-white shadow-md rounded-xl p-8 space-y-6"
         >
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -34,7 +34,7 @@ export default function Contact() {
               name="name"
               value={form.name}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
               required
             />
           </div>
@@ -48,7 +48,7 @@ export default function Contact() {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
               required
             />
           </div>
@@ -62,14 +62,14 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               rows={5}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500"
               required
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition w-full"
+            className="bg-primary-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition w-full"
           >
             Enviar mensaje
           </button>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Services />
+      <Services showCount={4} />
       <Appointment />
       <About />
       <Vision />
