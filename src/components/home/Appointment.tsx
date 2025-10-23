@@ -58,7 +58,7 @@ export default function Appointment() {
             type="submit"
             className="md:col-span-3 bg-primary-500 text-white py-3 rounded-lg font-medium hover:bg-primary-700 transition"
           >
-            Reservar Cita
+            Enviar mensaje
           </button>
         </form>
       </div>

@@ -8,7 +8,7 @@ export const servicesData: ServiceItem[] = [
   {
     title: "OBRAS DE INSTRUMENTACIÓN INDUSTRIAL",
     desc: "Calibración, mantenimiento correctivo y preventivo, montaje, pruebas de lazo y puesta en marcha de sistemas de instrumentación.",
-    imageUrl: "/industrial.jpeg",
+    imageUrl: "/instrumentacion.jpeg",
   },
   {
     title: "OBRAS ELÉCTRICAS",
