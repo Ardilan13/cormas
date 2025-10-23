@@ -13,7 +13,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Nombre: ${form.name}\nCorreo: ${form.email}\nMensaje:\n${form.message}`
     );
-    window.location.href = `mailto:gerencia@cormassas.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:comercial@cormassas.com?subject=${subject}&body=${body}`;
   };
 
   return (

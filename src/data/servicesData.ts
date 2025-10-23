@@ -18,7 +18,7 @@ export const servicesData: ServiceItem[] = [
   {
     title: "OBRAS MECÁNICA - TUBERÍA",
     desc: "Construcción, reparación, mantenimiento y Suministro de sistemas de tubería para refinerías, estaciones de bombeo, compresión; oleoductos y gasoductos, tubería sanitaria, tubería plástica. Montaje de equipos estáticos y rotativos.",
-    imageUrl: "/mecanica.jpeg",
+    imageUrl: "/mecanica_tuberia.jpeg",
   },
   {
     title: "OBRAS CIVILES",
@@ -38,17 +38,17 @@ export const servicesData: ServiceItem[] = [
   {
     title: "DISEÑO E INGENIERÍA",
     desc: "Desarrollo de ingenierías básica y de detalle en cualquier proceso de la industria, realizando levantamientos en campo, elaboración de memorias de cálculo, elaboración de especificaciones técnicas, elaboración de planos requeridos para todo proceso constructivo de las especialidades de proceso, mecánica, instrumentación, eléctrica y civil en diseños 2D y 3D, caracterización y catalogación, dosieres, planos Red Line y As Built.",
-    imageUrl: "/tubo_2.jpeg",
+    imageUrl: "/diseño_1.jpeg",
   },
   {
     title: "PRUEBAS HIDROSTÁTICAS ",
     desc: "Realizamos pruebas hidrostáticas y neumáticas a sistemas de tubería de proceso, oleoductos, gasoductos, recipientes a presión, tanques y válvulas.",
-    imageUrl: "/tuberia_3.jpeg",
+    imageUrl: "/pruebas.jpeg",
   },
   {
     title: "LIMPIEZA Y PINTURA",
     desc: "Mantenimiento, reparación y Suministro a sistemas nuevos de tubería, recipientes a presión, tanques de almacenamiento y estructuras metálicas.",
-    imageUrl: "/tuberia_2.jpeg",
+    imageUrl: "/limpieza.jpeg",
   },
   {
     title: "PROCESOS DE LICITACIONES",

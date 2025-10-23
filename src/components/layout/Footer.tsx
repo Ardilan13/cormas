@@ -10,16 +10,16 @@ export default function Footer() {
           <div>
             <h3 className="font-black">Ubicación</h3>
             <ul className="text-xs">
-              <li>Calle 71 # 27B-12</li>
-              <li>SEGUNDO PISO BARRIO LA LIBERTAD</li>
+              <li>CLL 71 # 27B-04</li>
+              <li>Barrio la libertad</li>
+              <li>Barrancabermeja, Santander</li>
             </ul>
           </div>
           <div>
             <h3 className="font-black">Contacto</h3>
             <ul className="text-xs">
               <li>3204292908</li>
-              <li>3108076486</li>
-              <li>gerencia@cormassas.com</li>
+              <li>cormercial@cormassas.com</li>
             </ul>
           </div>
         </div>
