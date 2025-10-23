@@ -13,7 +13,7 @@ export const servicesData: ServiceItem[] = [
   {
     title: "OBRAS ELÉCTRICAS",
     desc: "Desmantelamiento de sistemas eléctricos, instalación de tubería Conduit, instalación de bandejas porta cable, cableado estructurado, conexionado, instalación y pruebas a tableros para baja, media, alta tensión y puesta en marcha de sistemas eléctricos.",
-    imageUrl: "/tubo_1.jpeg",
+    imageUrl: "/electronica.jpeg",
   },
   {
     title: "OBRAS MECÁNICA - TUBERÍA",
@@ -33,7 +33,7 @@ export const servicesData: ServiceItem[] = [
   {
     title: "MANTENIMIENTO ELECTRÓNICO",
     desc: "Nos encargamos de la reparación, mantenimiento y suministro de su equipo de electrónica industrial, PLC, CNC, HMI, variadores de frecuencia y velocidad, servo drives, placas electrónicas industriales,fuentes de alimentación AC/DC, arrancadores suaves, equipos de medición de instrumentación y automatización en general. Diseño electrónico y elaboración de componentes con impresión 3D.",
-    imageUrl: "/electronica.jpeg",
+    imageUrl: "/electrica.jpeg",
   },
   {
     title: "DISEÑO E INGENIERÍA",
