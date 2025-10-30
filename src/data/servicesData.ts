@@ -28,7 +28,7 @@ export const servicesData: ServiceItem[] = [
   {
     title: "AUTOMATIZACIÓN Y CONTROL",
     desc: "Desarrollo de aplicaciones tecnológicas aplicadas a la industria, programación de PLC, microcontroladores, desarrollo de lógica de contactores, conguración de equipos de comunicación, redes de datos e información.",
-    imageUrl: "/diseño.jpeg",
+    imageUrl: "/automa.jpg",
   },
   {
     title: "MANTENIMIENTO ELECTRÓNICO",
